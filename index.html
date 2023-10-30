@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <table id="report_Table">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Email</th>
+                <th>Company</th>
+                <th>Change</th>
+            </tr>
+        </thead>
+        <tbody id="report_Tbody"></tbody>
+    </table>
+    <a href="#">
+        <img id="add_Button" src="./images/plus.png" alt="Add Button">
+    </a>
+
+    <form method="post" id="add_Form">
+        <img id="close_Img" src="./images/close.png" alt="Close">
+        <div>
+            <input name="firstName" type="text" placeholder="first Name">
+        </div>
+        <div>
+            <input name="lastName" type="text" placeholder="Last Name">
+        </div>
+        <div>
+            <input name="email" type="email" placeholder="Email">
+        </div>
+        <div>
+            <input name="age" type="number" placeholder="age">
+        </div>
+
+        <div>
+            <input name="password" type="password" placeholder="password">
+        </div>
+        <div>
+            <label for="company_Select">Company</label>
+            <select name="company" id="company_Select"></select>
+            <label for="rol_Select">Rol</label>
+            <select name="role" id="role_Select"></select>
+        </div>
+        <div>
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+
+    <form method="post" id="update_Form">
+        <img id="close_Img_Update" src="./images/close.png" alt="Close">
+        <div>
+            <input type="text" name="firstName" placeholder="First Name">
+        </div>
+        <div>
+            <input type="text" name="lastName" placeholder="Last Name">
+        </div>
+        <div>
+            <input type="number" name="age" placeholder="Age">
+        </div>
+        <div>
+            <input class="submit" type="submit" value="Submit">
+        </div>
+    </form>
+    <script src="./fetchFunctions.js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>

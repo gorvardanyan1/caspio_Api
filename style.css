@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f7f8;
+}
+
+table {
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 20px auto;
+  background-color: #fff;
+  width: 80%;
+}
+thead {
+  background-color: #005883;
+}
+th {
+  padding: 10px 20px;
+  color: #fff;
+}
+th {
+  text-align: left;
+}
+tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+#add_Button {
+  margin: 0 auto;
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+#update_Img,
+#remove_Img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.change_td {
+  display: flex;
+  justify-content: space-evenly;
+}
+#add_Form,
+#update_Form {
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f1efef;
+  visibility: hidden;
+}
+/* #update_Form {
+  visibility: visible;
+} */
+#add_Form input,
+#update_Form input {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  font-size: 20px;
+}
+#add_Form div,
+#update_Form div {
+  width: 70%;
+  margin: 10px auto;
+}
+.submit {
+  background-color: #a0e9ff;
+  color: white;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+#close_Img,
+#close_Img_Update {
+  float: right;
+}
+#company_Select,
+#role_Select {
+  padding: 5px 5px;
+  border: none;
+  border-radius: 5px;
+}
